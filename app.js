@@ -28,8 +28,8 @@ app.get('/events', (req, res) => {
   res.render('events');
 });
 
-app.get('/members', (req, res) => {
-  res.render('members');
+app.get('/donate', (req, res) => {
+  res.render('donate');
 });
 
 // Home page
