@@ -16,6 +16,21 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views/pages'));
 
 //routes:
+app.get('/about', (req, res) => {
+  res.render('about');
+});
+
+app.get('/contact', (req, res) => {
+  res.render('contact');
+});
+
+app.get('/events', (req, res) => {
+  res.render('events');
+});
+
+app.get('/members', (req, res) => {
+  res.render('members');
+});
 
 // Home page
 app.get('/', (req, res) => {
