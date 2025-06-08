@@ -53,6 +53,46 @@ body {
     text-decoration: underline;
 }
 
+/* Container that holds all slides */
+.slideshow-container {
+  position: relative;
+  max-width: 100%;     /* Full width */
+  margin: auto;        /* Center it horizontally */
+  overflow: hidden;    /* Hide parts of images that overflow */
+}
+
+/* Style for each image slide */
+.slide {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: none;       /* Hide all slides by default */
+  transition: opacity 1s ease-in-out; /* Smooth transition */
+}
+
+/* Arrows for navigation */
+.prev, .next {
+  position: absolute;            /* Position over the image */
+  top: 50%;                      /* Vertically centered */
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+  color: white;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  transform: translateY(-50%);   /* Adjust for exact vertical center */
+  z-index: 1;                    /* Ensure buttons are above the images */
+}
+
+/* Left arrow */
+.prev {
+  left: 15px;
+}
+
+/* Right arrow */
+.next {
+  right: 15px;
+}
+
 /* Responsive for small screens */
 @media (max-width: 600px) {
     .container {
