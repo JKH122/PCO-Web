@@ -7,9 +7,9 @@ const slides = document.getElementsByClassName("slide");
 // Function to display the current slide and hide the rest
 function showSlide(index) {
 for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; // Hide all slides
+    slides[i].classList.remove("active");
 }
-slides[index].style.display = "block"; // Show the selected slide
+slides[index].classList.add("active");
 }
 
 // Function to change slide (forward or backward)
