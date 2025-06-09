@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Psi-Chi-Omega Homepage</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body class="about">
+    <%- include('../partials/header') %>
+
+    <main>
+        <div class="tab-layout">
+  <!-- Left side buttons -->
+  <div class="tab-buttons">
+    <button onclick="changeTab(0)">Section 1</button>
+    <button onclick="changeTab(1)">Section 2</button>
+    <button onclick="changeTab(2)">Section 3</button>
+  </div>
+
+  <!-- Right side content panels -->
+  <div class="tab-content">
+    <div class="tab-panel active"> <!-- Visible by default -->
+      <h2>Section 1</h2>
+      <p>This is content for Section 1. Could also be an image.</p>
+    </div>
+
+    <div class="tab-panel">
+      <h2>Section 2</h2>
+      <img src="/images/example.jpg" alt="Example" style="max-width:100%;">
+    </div>
+
+    <div class="tab-panel">
+      <h2>Section 3</h2>
+      <p>Different content again for Section 3.</p>
+    </div>
+
+  </div>
+</div>
+    </main>
+
+    <%- include('../partials/footer') %>
+    <script src="/js/tabs.js"></script>
+</body>
+</html>

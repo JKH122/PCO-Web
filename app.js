@@ -32,6 +32,10 @@ app.get('/donate', (req, res) => {
   res.render('donate');
 });
 
+app.get('/rush', (req, res) => {
+  res.render('rush');
+});
+
 // Home page
 app.get('/', (req, res) => {
   res.render('index');
